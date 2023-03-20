@@ -1,0 +1,11 @@
+<div class="movie-tile-wrapper">
+    <div>
+        <div class="poster-wrapper">
+            <img [src]="imageUrl" width="200px" height="300px" />
+        </div>
+        <div class="icon-bar">
+            <fa-icon [icon]="faFav" (click)="onFavClick()"></fa-icon> <!--is favourite or not-->
+            <fa-icon [icon]="faWatched" (click)="onWatchedClick()"></fa-icon><!--is watched or not-->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="add-movie border border-danger">
+    <a routerLink="/list" class="btn btn-danger btn-lg">Go To List</a>
+    <form class="add-movie-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="movieTitle">Movie Name</label>
+            <input type="text" name="movieTitle" [(ngModel)]="movieTitle" id="movieTitle"
+                placeholder="Add Anime Name" /><!--Add movie name-->
+        </div>
+        <div class="form-control">
+            <label for="image">Image Url</label>
+            <input type="text" name="image" [(ngModel)]="image" id="image"
+                placeholder="Add Image url" /><!--Add Image url-->
+        </div>
+        <div class="form-control form-control-check">
+            <label for="watched">Watched</label>
+            <input type="checkbox" name="watched" [(ngModel)]="isWatched"
+                id="watched" /><!--if watched the anime or not-->
+        </div>
+        <div class="form-control form-control-check">
+            <label for="watched">Favourite</label>
+            <input type="checkbox" name="fav" [(ngModel)]="isFav" id="fav" /><!--if anime is your fav or not-->
+        </div>
+        <input type="submit" value="Add Movie" class="btn btn-block" />
+    </form>
+</div>
